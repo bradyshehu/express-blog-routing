@@ -14,6 +14,8 @@ app.get("/", (req, res) => {
   res.send("<h1>Server del mio blog</h1>");
 });
 
+// ROUTING
+
 app.use("/posts", postsRouter);
 
 app.listen(app_port, () => {
