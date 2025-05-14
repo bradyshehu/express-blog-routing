@@ -22,7 +22,7 @@ router.get("/:id", (req, res) => {
   });
 });
 
-// CREATE
+// STORE
 
 router.post("", (req, res) => {
   res.send("Creazione di un nuovo post");
@@ -51,5 +51,7 @@ router.delete("/:id", (req, res) => {
   const currentPost = posts.posts.find((post) => post.id == id);
   res.send("Cancellazione del post " + id);
 });
+
+// EXPORTING
 
 module.exports = router;

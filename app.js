@@ -4,8 +4,10 @@
 
 const app_port = 3000;
 const app_url = "http://localhost";
+
 const express = require("express");
 const app = express();
+
 const postsRouter = require("./routers/postsRouter");
 
 app.use(express.static("public"));
